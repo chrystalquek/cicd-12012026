@@ -43,6 +43,7 @@ jobs:
           args: --severity-threshold=high
 
   send-telegram-notification:
+    needs: build-and-test
     name: telegram message
     runs-on: ubuntu-latest
     steps:
