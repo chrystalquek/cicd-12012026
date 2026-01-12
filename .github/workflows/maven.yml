@@ -34,7 +34,6 @@ jobs:
     needs: build-and-test
     runs-on: ubuntu-latest
     steps:
-      - uses: synk/actions/maven@master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/maven@master
         env:
